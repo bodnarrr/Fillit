@@ -6,7 +6,7 @@
 /*   By: abodnar <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 15:13:44 by abodnar           #+#    #+#             */
-/*   Updated: 2017/11/24 20:09:48 by ypikul           ###   ########.fr       */
+/*   Updated: 2017/12/01 12:50:17 by abodnar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void	ft_clear_same_letter(char **matrix, int pos_y)
 	}
 }
 
-char	**ft_clear_rows(char **matrix, int pos_y)
+char		**ft_clear_rows(char **matrix, int pos_y)
 {
 	int		i;
 	int		j;
