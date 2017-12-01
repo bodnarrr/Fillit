@@ -72,22 +72,21 @@ FLAGS += -I./
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	ar rc $@ $^
-	ranlib $@
+	@ar rc $@ $^
+	@ranlib $@
 
 obj:
-	mkdir obj/
+	@mkdir obj/
 
 obj/%.o: ./%.c | obj
-	$(CC) $(FLAGS) $< -o $@
+	@$(CC) $(FLAGS) $< -o $@
 
 clean:
-	rm -rf obj/
+	@rm -rf obj/
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
-.NOTPARALLEL:
 .PHONY: all clean fclean re
